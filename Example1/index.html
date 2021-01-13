@@ -12,16 +12,15 @@
       <!-- Zoom controls -->
       <div>
         <span>Zoom</span>
-        <button class="btn zoom-trigger" data-type="in" title="Zoom In">Zoom In2</button>
+        <button class="btn zoom-trigger" data-type="in" title="Zoom In">Zoom In</button>
         <button class="btn zoom-trigger" data-type="out" title="Zoom Out">Zoom Out</button>
       </div>
 
       <!-- Type controls -->
       <div>
         <span>Views</span>
-        <button class="btn view-trigger active" data-type="vis" title="Visible">Vis</button>
-        <button class="btn view-trigger active" data-type="xra" title="X-ray">Xray</button>
-        <button class="btn view-trigger" data-type="irr" title="Infrared">Ir</button>
+        <button class="btn view-trigger active" data-type="before" title="Before">Before</button>
+        <button class="btn view-trigger active" data-type="after" title="After">After</button>
       </div>
 
       <!-- Mode toggles -->
@@ -51,18 +50,14 @@
         container: document.querySelector('#viewer'),
         images: [
           {
-            key: 'vis',
-            tileSource: 'https://raw.githubusercontent.com/Epsilon17/CurtainImages/master/Modifications/InkImage/info.json',
+            key: 'before',
+            tileSource: 'https://raw.githubusercontent.com/Epsilon17/CurtainImages/master/ExampleImages/MasteroftheLaubenberg_NCMA_before_tn/info.json',
             shown: true
           },
           {
-            key: 'xra',
-            tileSource: 'https://raw.githubusercontent.com/Epsilon17/CurtainImages/master/Modifications/InkImage/info.json',
+            key: 'after',
+            tileSource: 'https://raw.githubusercontent.com/Epsilon17/CurtainImages/master/ExampleImages/MasteroftheLaubenberg_NCMA_after_tn/info.json',
             shown: true
-          },
-          {
-            key: 'irr',
-            tileSource: 'https://raw.githubusercontent.com/Epsilon17/CurtainImages/master/Modifications/page001/info.json',
           }
         ]
       });
